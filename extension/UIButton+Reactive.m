@@ -18,7 +18,7 @@ UIButton *buttonInit() {
     return button;
 }
 
-CGFloat scaleSize(CGFloat width){
+CGFloat hxFloat(CGFloat width){
     return width/414.0 * [UIScreen mainScreen].bounds.size.width;
 }
 

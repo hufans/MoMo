@@ -10,7 +10,7 @@
 #import "BaseHeader.h"
 //C声明
 UIButton *buttonInit();
-CGFloat scaleSize(CGFloat);
+extern CGFloat hxFloat(CGFloat);
 
 @interface UIButton (Reactive)
 

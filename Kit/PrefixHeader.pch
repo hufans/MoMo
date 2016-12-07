@@ -18,5 +18,16 @@
 ///RGB值
 #define RGB(R,G,B,A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
 
+///导入分类
+#import "UIButton+Reactive.h"
+#import "UICollectionView+Reactive.h"
+#import "UICollectionViewFlowLayout+Reactive.h"
+#import "UIImageView+Reactive.h"
+#import "UILabel+Reactive.h"
+#import "UIScrollView+Reactive.h"
+#import "UITableView+Reactive.h"
+#import "UITextField+Reactive.h"
+#import "UITextView+Reactive.h"
+#import "UIView+Reactive.h"
 
 #endif /* PrefixHeader_pch */
