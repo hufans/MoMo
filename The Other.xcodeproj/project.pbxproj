@@ -17,6 +17,7 @@
 		29DF74491DF7D3EB00E90A2A /* UITextField+Reactive.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DF743D1DF7D3EB00E90A2A /* UITextField+Reactive.m */; };
 		29DF744A1DF7D3EB00E90A2A /* UITextView+Reactive.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DF743F1DF7D3EB00E90A2A /* UITextView+Reactive.m */; };
 		29DF744B1DF7D3EB00E90A2A /* UIView+Reactive.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DF74411DF7D3EB00E90A2A /* UIView+Reactive.m */; };
+		29DF74501DF7D64A00E90A2A /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DF744F1DF7D64A00E90A2A /* Utils.m */; };
 		410BFBF71DF7C7CF006C93A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 410BFBF61DF7C7CF006C93A0 /* main.m */; };
 		410BFBFA1DF7C7CF006C93A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 410BFBF91DF7C7CF006C93A0 /* AppDelegate.m */; };
 		410BFBFD1DF7C7CF006C93A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410BFBFC1DF7C7CF006C93A0 /* ViewController.m */; };
@@ -67,6 +68,9 @@
 		29DF743F1DF7D3EB00E90A2A /* UITextView+Reactive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Reactive.m"; sourceTree = "<group>"; };
 		29DF74401DF7D3EB00E90A2A /* UIView+Reactive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Reactive.h"; sourceTree = "<group>"; };
 		29DF74411DF7D3EB00E90A2A /* UIView+Reactive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Reactive.m"; sourceTree = "<group>"; };
+		29DF744E1DF7D64A00E90A2A /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		29DF744F1DF7D64A00E90A2A /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		29DF74511DF7D9CF00E90A2A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		410BFBF21DF7C7CF006C93A0 /* The Other.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Other.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		410BFBF61DF7C7CF006C93A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		410BFBF81DF7C7CF006C93A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -155,6 +159,9 @@
 		29DF744D1DF7D5AF00E90A2A /* Kit */ = {
 			isa = PBXGroup;
 			children = (
+				29DF744E1DF7D64A00E90A2A /* Utils.h */,
+				29DF744F1DF7D64A00E90A2A /* Utils.m */,
+				29DF74511DF7D9CF00E90A2A /* PrefixHeader.pch */,
 			);
 			path = Kit;
 			sourceTree = SOURCE_ROOT;
@@ -449,6 +456,7 @@
 				29DF74461DF7D3EB00E90A2A /* UILabel+Reactive.m in Sources */,
 				410BFBFD1DF7C7CF006C93A0 /* ViewController.m in Sources */,
 				29DF744A1DF7D3EB00E90A2A /* UITextView+Reactive.m in Sources */,
+				29DF74501DF7D64A00E90A2A /* Utils.m in Sources */,
 				29DF744B1DF7D3EB00E90A2A /* UIView+Reactive.m in Sources */,
 				29DF74451DF7D3EB00E90A2A /* UIImageView+Reactive.m in Sources */,
 				410BFBFA1DF7C7CF006C93A0 /* AppDelegate.m in Sources */,
@@ -605,6 +613,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3NRA94FPS6;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/kit/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/The Other/app/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -619,6 +629,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3NRA94FPS6;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/kit/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/The Other/app/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
