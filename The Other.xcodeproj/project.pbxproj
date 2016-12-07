@@ -15,6 +15,7 @@
 		410BFC051DF7C7CF006C93A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 410BFC031DF7C7CF006C93A0 /* LaunchScreen.storyboard */; };
 		410BFC101DF7C7CF006C93A0 /* The_OtherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 410BFC0F1DF7C7CF006C93A0 /* The_OtherTests.m */; };
 		410BFC1B1DF7C7CF006C93A0 /* The_OtherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 410BFC1A1DF7C7CF006C93A0 /* The_OtherUITests.m */; };
+		6A36D4C73AEB72212FAF9E5A /* libPods-The Other.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABBA2B382EC5439F21DF0B15 /* libPods-The Other.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		410BFC161DF7C7CF006C93A0 /* The OtherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The OtherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		410BFC1A1DF7C7CF006C93A0 /* The_OtherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = The_OtherUITests.m; sourceTree = "<group>"; };
 		410BFC1C1DF7C7CF006C93A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABBA2B382EC5439F21DF0B15 /* libPods-The Other.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-The Other.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8E48C2EC48B0C418A8B822F /* Pods-The Other.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Other.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Other/Pods-The Other.release.xcconfig"; sourceTree = "<group>"; };
+		F220C9C93F2D51D0170F4147 /* Pods-The Other.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Other.debug.xcconfig"; path = "Pods/Target Support Files/Pods-The Other/Pods-The Other.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A36D4C73AEB72212FAF9E5A /* libPods-The Other.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01875C3DB9B729CA184856C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F220C9C93F2D51D0170F4147 /* Pods-The Other.debug.xcconfig */,
+				D8E48C2EC48B0C418A8B822F /* Pods-The Other.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3415731DD6863A346A22150C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABBA2B382EC5439F21DF0B15 /* libPods-The Other.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		410BFBE91DF7C7CF006C93A0 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				410BFC0E1DF7C7CF006C93A0 /* The OtherTests */,
 				410BFC191DF7C7CF006C93A0 /* The OtherUITests */,
 				410BFBF31DF7C7CF006C93A0 /* Products */,
+				01875C3DB9B729CA184856C8 /* Pods */,
+				3415731DD6863A346A22150C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +125,9 @@
 		410BFBF41DF7C7CF006C93A0 /* The Other */ = {
 			isa = PBXGroup;
 			children = (
-				410BFBF81DF7C7CF006C93A0 /* AppDelegate.h */,
-				410BFBF91DF7C7CF006C93A0 /* AppDelegate.m */,
-				410BFBFB1DF7C7CF006C93A0 /* ViewController.h */,
-				410BFBFC1DF7C7CF006C93A0 /* ViewController.m */,
-				410BFBFE1DF7C7CF006C93A0 /* Main.storyboard */,
-				410BFC011DF7C7CF006C93A0 /* Assets.xcassets */,
-				410BFC031DF7C7CF006C93A0 /* LaunchScreen.storyboard */,
-				410BFC061DF7C7CF006C93A0 /* Info.plist */,
+				410BFC2A1DF7C7F9006C93A0 /* Class */,
+				410BFC291DF7C7E5006C93A0 /* UI */,
+				410BFC281DF7C7D9006C93A0 /* app */,
 				410BFBF51DF7C7CF006C93A0 /* Supporting Files */,
 			);
 			path = "The Other";
@@ -140,6 +159,35 @@
 			path = "The OtherUITests";
 			sourceTree = "<group>";
 		};
+		410BFC281DF7C7D9006C93A0 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				410BFC061DF7C7CF006C93A0 /* Info.plist */,
+				410BFBF81DF7C7CF006C93A0 /* AppDelegate.h */,
+				410BFBF91DF7C7CF006C93A0 /* AppDelegate.m */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		410BFC291DF7C7E5006C93A0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				410BFBFE1DF7C7CF006C93A0 /* Main.storyboard */,
+				410BFC011DF7C7CF006C93A0 /* Assets.xcassets */,
+				410BFC031DF7C7CF006C93A0 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		410BFC2A1DF7C7F9006C93A0 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				410BFBFB1DF7C7CF006C93A0 /* ViewController.h */,
+				410BFBFC1DF7C7CF006C93A0 /* ViewController.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 410BFC1F1DF7C7CF006C93A0 /* Build configuration list for PBXNativeTarget "The Other" */;
 			buildPhases = (
+				2B797A9961ECCF0CA073B0A4 /* [CP] Check Pods Manifest.lock */,
 				410BFBEE1DF7C7CF006C93A0 /* Sources */,
 				410BFBEF1DF7C7CF006C93A0 /* Frameworks */,
 				410BFBF01DF7C7CF006C93A0 /* Resources */,
+				9667D13742941EFD5F1B635E /* [CP] Embed Pods Frameworks */,
+				634575C3A4AF13EA3EE5D2FA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,6 +321,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B797A9961ECCF0CA073B0A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		634575C3A4AF13EA3EE5D2FA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Other/Pods-The Other-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9667D13742941EFD5F1B635E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Other/Pods-The Other-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		410BFBEE1DF7C7CF006C93A0 /* Sources */ = {
@@ -423,10 +522,11 @@
 		};
 		410BFC201DF7C7CF006C93A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F220C9C93F2D51D0170F4147 /* Pods-The Other.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3NRA94FPS6;
-				INFOPLIST_FILE = "The Other/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/The Other/app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hufan.com.The-Other";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -435,10 +535,11 @@
 		};
 		410BFC211DF7C7CF006C93A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8E48C2EC48B0C418A8B822F /* Pods-The Other.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3NRA94FPS6;
-				INFOPLIST_FILE = "The Other/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/The Other/app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hufan.com.The-Other";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +615,7 @@
 				410BFC211DF7C7CF006C93A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		410BFC221DF7C7CF006C93A0 /* Build configuration list for PBXNativeTarget "The OtherTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +624,7 @@
 				410BFC241DF7C7CF006C93A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		410BFC251DF7C7CF006C93A0 /* Build configuration list for PBXNativeTarget "The OtherUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +633,7 @@
 				410BFC271DF7C7CF006C93A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
