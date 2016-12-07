@@ -527,6 +527,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3NRA94FPS6;
 				INFOPLIST_FILE = "$(SRCROOT)/The Other/app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hufan.com.The-Other";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -540,6 +541,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3NRA94FPS6;
 				INFOPLIST_FILE = "$(SRCROOT)/The Other/app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hufan.com.The-Other";
 				PRODUCT_NAME = "$(TARGET_NAME)";
