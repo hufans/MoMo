@@ -123,7 +123,7 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		29DF742C1DF7D3EB00E90A2A /* extension */ = {
+		29DF742C1DF7D3EB00E90A2A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				29DF742D1DF7D3EB00E90A2A /* BaseHeader.h */,
@@ -148,7 +148,15 @@
 				29DF74401DF7D3EB00E90A2A /* UIView+Reactive.h */,
 				29DF74411DF7D3EB00E90A2A /* UIView+Reactive.m */,
 			);
+			name = Extension;
 			path = extension;
+			sourceTree = SOURCE_ROOT;
+		};
+		29DF744D1DF7D5AF00E90A2A /* Kit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Kit;
 			sourceTree = SOURCE_ROOT;
 		};
 		3415731DD6863A346A22150C /* Frameworks */ = {
@@ -184,7 +192,8 @@
 		410BFBF41DF7C7CF006C93A0 /* The Other */ = {
 			isa = PBXGroup;
 			children = (
-				29DF742C1DF7D3EB00E90A2A /* extension */,
+				29DF744D1DF7D5AF00E90A2A /* Kit */,
+				29DF742C1DF7D3EB00E90A2A /* Extension */,
 				410BFC2A1DF7C7F9006C93A0 /* Class */,
 				410BFC291DF7C7E5006C93A0 /* UI */,
 				410BFC281DF7C7D9006C93A0 /* app */,
