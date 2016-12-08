@@ -24,9 +24,21 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
+## AVOSCloud
+
+Copyright 2015 LeanCloud, Inc. See https://leancloud.cn/terms.html
+
+## AVOSCloudCrashReporting
+
+Copyright 2015 LeanCloud, Inc. See https://leancloud.cn/terms.html
+
+## AVOSCloudIM
+
+Copyright 2015 LeanCloud, Inc. See https://leancloud.cn/terms.html
+
 ## MBProgressHUD
 
-Copyright © 2009-2016 Matej Bukovinski
+Copyright (c) 2009-2015 Matej Bukovinski
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
