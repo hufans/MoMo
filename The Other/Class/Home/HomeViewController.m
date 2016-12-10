@@ -7,8 +7,11 @@
 //
 
 #import "HomeViewController.h"
+#import "MJRefresh.h"
 
-@interface HomeViewController ()
+@interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic, strong)UITableView *testTableView;
 
 @end
 
@@ -18,6 +21,35 @@
     [super viewDidLoad];
     self.title = @"推荐";
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    self.testTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:(UITableViewStylePlain)];
+    self.testTableView.delegate = self;
+    self.testTableView.dataSource = self;
+    [self.view addSubview:self.testTableView];
+    
+    //MJRefreshNormalHeader.m
+    MJRefreshNormalHeader *refreshHeader = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        NSLog(@"下拉刷新了");
+    }];
+    
+    self.testTableView.mj_header = refreshHeader;
+    
+    refreshHeader.lastUpdatedTimeLabel.hidden = true;
+    refreshHeader.stateLabel.hidden = true;
+    
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 5;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    }
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld",indexPath.row];
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,14 +57,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

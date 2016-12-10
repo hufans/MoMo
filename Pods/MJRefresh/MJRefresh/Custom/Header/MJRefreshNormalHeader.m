@@ -12,6 +12,7 @@
 @interface MJRefreshNormalHeader()
 {
     __unsafe_unretained UIImageView *_arrowView;
+    CGFloat offset;
 }
 @property (weak, nonatomic) UIActivityIndicatorView *loadingView;
 @end
@@ -103,18 +104,18 @@
                 
                 self.loadingView.alpha = 1.0;
                 [self.loadingView stopAnimating];
-                self.arrowView.hidden = NO;
+//                self.arrowView.hidden = NO;
             }];
         } else {
             [self.loadingView stopAnimating];
-            self.arrowView.hidden = NO;
+//            self.arrowView.hidden = NO;
             [UIView animateWithDuration:MJRefreshFastAnimationDuration animations:^{
                 self.arrowView.transform = CGAffineTransformIdentity;
             }];
         }
     } else if (state == MJRefreshStatePulling) {
         [self.loadingView stopAnimating];
-        self.arrowView.hidden = NO;
+//        self.arrowView.hidden = NO;
         [UIView animateWithDuration:MJRefreshFastAnimationDuration animations:^{
             self.arrowView.transform = CGAffineTransformMakeRotation(0.000001 - M_PI);
         }];
@@ -124,4 +125,13 @@
         self.arrowView.hidden = YES;
     }
 }
+
+#pragma mark - 偏移中......
+- (void)scrollViewContentOffsetDidChange:(NSDictionary *)change{
+    self.arrowView.hidden = true;
+    [super scrollViewContentOffsetDidChange:change];
+    offset = self.scrollView.contentOffset.y;
+    NSLog(@"当前偏移量 = %lf",self.scrollView.contentOffset.y);
+}
+
 @end
