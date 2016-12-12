@@ -18,6 +18,9 @@
     [super viewDidLoad];
     
     self.tabBar.tintColor = [UIColor orangeColor];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
