@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"朋友";
+    self.title = @"好友";
     self.view.backgroundColor = [UIColor whiteColor];
     
 }
