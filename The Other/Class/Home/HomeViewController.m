@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"推荐";
+    self.title = @"发现";
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.testTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:(UITableViewStylePlain)];
@@ -27,7 +27,7 @@
     self.testTableView.dataSource = self;
     [self.view addSubview:self.testTableView];
     
-    //MJRefreshNormalHeader.m
+    //MJRefreshNormalHeader.m文件中设置下拉刷新动画
     MJRefreshNormalHeader *refreshHeader = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         NSLog(@"下拉刷新了");
     }];

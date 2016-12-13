@@ -17,6 +17,9 @@
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 ///RGB值
 #define RGB(R,G,B,A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+//主题色
+#define themeColor [UIColor colorWithRed:0/255.0 green:180/255.0 blue:254/255.0 alpha:1.0]
+
 
 ///导入分类
 #import "UIButton+Reactive.h"

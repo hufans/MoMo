@@ -19,10 +19,11 @@
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="u6m-DM-Ti8" kind="relationship" relationship="viewControllers" id="eH8-3s-UcF"/>
-                        <segue destination="AZY-ZN-arR" kind="relationship" relationship="viewControllers" id="BgQ-nV-QG1"/>
-                        <segue destination="TFb-5p-piC" kind="relationship" relationship="viewControllers" id="7H7-mp-hu8"/>
-                        <segue destination="AZ5-E4-6vQ" kind="relationship" relationship="viewControllers" id="gBg-bF-2pe"/>
+                        <segue destination="DXi-Dj-0oD" kind="relationship" relationship="viewControllers" id="I89-Rq-kg6"/>
+                        <segue destination="u6m-DM-Ti8" kind="relationship" relationship="viewControllers" id="tAP-zo-Vhc"/>
+                        <segue destination="AZY-ZN-arR" kind="relationship" relationship="viewControllers" id="L9X-ES-lHW"/>
+                        <segue destination="TFb-5p-piC" kind="relationship" relationship="viewControllers" id="niO-Wk-zVQ"/>
+                        <segue destination="AZ5-E4-6vQ" kind="relationship" relationship="viewControllers" id="MUA-l0-z4Y"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3E3-bN-Ktr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -30,10 +31,27 @@
             <point key="canvasLocation" x="-1126" y="344"/>
         </scene>
         <!--推荐-->
+        <scene sceneID="Kif-EB-6Fz">
+            <objects>
+                <navigationController id="DXi-Dj-0oD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="推荐" image="Recommend" selectedImage="Recommend-selected" id="TKJ-Kk-wIZ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cGg-t4-uOG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="coY-4y-vPv" kind="relationship" relationship="rootViewController" id="skQ-Qm-pjU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VfT-f2-plH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3140" y="1100"/>
+        </scene>
+        <!--发现-->
         <scene sceneID="VAp-Rl-F71">
             <objects>
                 <navigationController id="u6m-DM-Ti8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="推荐" image="Home" selectedImage="Home-selected" id="kle-Lm-cek"/>
+                    <tabBarItem key="tabBarItem" title="发现" image="Home" selectedImage="Home-selected" id="kle-Lm-cek"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Trv-Vv-7oQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -45,6 +63,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CxN-HY-vQl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2300" y="1100"/>
+        </scene>
+        <!--Recommend View Controller-->
+        <scene sceneID="VEW-a9-IQ3">
+            <objects>
+                <viewController id="coY-4y-vPv" customClass="RecommendViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qe4-3X-Joc"/>
+                        <viewControllerLayoutGuide type="bottom" id="q66-qI-ayN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YLA-6A-NRh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4OV-ZO-oLk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="avd-Q8-ers" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3140" y="1997"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="eC8-rb-bO1">
@@ -183,5 +220,7 @@
         <image name="Me-selected" width="25" height="25"/>
         <image name="Message" width="25" height="25"/>
         <image name="Message-selected" width="25" height="25"/>
+        <image name="Recommend" width="25" height="25"/>
+        <image name="Recommend-selected" width="25" height="25"/>
     </resources>
 </document>

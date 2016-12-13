@@ -131,7 +131,7 @@
     self.arrowView.hidden = true;
     [super scrollViewContentOffsetDidChange:change];
     offset = self.scrollView.contentOffset.y;
-    NSLog(@"当前偏移量 = %lf",self.scrollView.contentOffset.y);
+//    NSLog(@"当前偏移量 = %lf",self.scrollView.contentOffset.y);
 }
 
 @end
