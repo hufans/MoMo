@@ -26,11 +26,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     //应用奔溃报告
-    [AVOSCloudCrashReporting enable];
+    //[AVOSCloudCrashReporting enable];
     //初始化LeanCloud应用
-    [AVOSCloud setApplicationId:@"ormA8n3IcoDDOVXcEEvdkX7h-gzGzoHsz" clientKey:@"1loCr7afexqAxnVDnJC2mOw4"];
+//    [AVOSCloud setApplicationId:@"ormA8n3IcoDDOVXcEEvdkX7h-gzGzoHsz" clientKey:@"1loCr7afexqAxnVDnJC2mOw4"];
     //稳定实时的数据统计分析服务
-    [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    //[AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
 
     return YES;
 }

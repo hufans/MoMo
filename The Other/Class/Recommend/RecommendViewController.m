@@ -7,6 +7,7 @@
 //
 
 #import "RecommendViewController.h"
+#import "LoginViewController.h"
 
 @interface RecommendViewController ()
 
@@ -17,6 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"推荐";
+    
+    
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+   
+    LoginViewController *Login =  [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"LoginViewController"];
+    [self presentModalViewController:Login animated:YES];
+//    [self presentViewController:Login:completion:YES];
     
     
 }
