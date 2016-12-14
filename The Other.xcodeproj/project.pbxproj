@@ -31,8 +31,6 @@
 		410BFC051DF7C7CF006C93A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 410BFC031DF7C7CF006C93A0 /* LaunchScreen.storyboard */; };
 		410BFC101DF7C7CF006C93A0 /* The_OtherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 410BFC0F1DF7C7CF006C93A0 /* The_OtherTests.m */; };
 		410BFC1B1DF7C7CF006C93A0 /* The_OtherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 410BFC1A1DF7C7CF006C93A0 /* The_OtherUITests.m */; };
-		4134E3421DFFE13100E26DCB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4134E3411DFFE13100E26DCB /* LoginViewController.m */; };
-		41E7B9791E01267D00C11FFB /* LoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E7B9781E01267D00C11FFB /* LoginTableViewCell.m */; };
 		6A36D4C73AEB72212FAF9E5A /* libPods-The Other.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABBA2B382EC5439F21DF0B15 /* libPods-The Other.a */; };
 /* End PBXBuildFile section */
 
@@ -104,10 +102,6 @@
 		410BFC161DF7C7CF006C93A0 /* The OtherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The OtherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		410BFC1A1DF7C7CF006C93A0 /* The_OtherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = The_OtherUITests.m; sourceTree = "<group>"; };
 		410BFC1C1DF7C7CF006C93A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4134E3401DFFE13100E26DCB /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		4134E3411DFFE13100E26DCB /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		41E7B9771E01267D00C11FFB /* LoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTableViewCell.h; sourceTree = "<group>"; };
-		41E7B9781E01267D00C11FFB /* LoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableViewCell.m; sourceTree = "<group>"; };
 		ABBA2B382EC5439F21DF0B15 /* libPods-The Other.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-The Other.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E48C2EC48B0C418A8B822F /* Pods-The Other.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Other.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Other/Pods-The Other.release.xcconfig"; sourceTree = "<group>"; };
 		F220C9C93F2D51D0170F4147 /* Pods-The Other.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Other.debug.xcconfig"; path = "Pods/Target Support Files/Pods-The Other/Pods-The Other.debug.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +149,13 @@
 				299D28701DFE8752007F5093 /* RecommendViewController.m */,
 			);
 			path = Recommend;
+			sourceTree = "<group>";
+		};
+		299D28741E013F30007F5093 /* LoginAndRegister */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginAndRegister;
 			sourceTree = "<group>";
 		};
 		29DF742C1DF7D3EB00E90A2A /* Extension */ = {
@@ -326,7 +327,7 @@
 		410BFC2A1DF7C7F9006C93A0 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				4134E33F1DFFE0DB00E26DCB /* Login */,
+				299D28741E013F30007F5093 /* LoginAndRegister */,
 				299D286E1DFE8742007F5093 /* Recommend */,
 				29DF74531DF94BD900E90A2A /* Contacts */,
 				29DF74541DF94BD900E90A2A /* Home */,
@@ -334,25 +335,6 @@
 				29DF74561DF94BD900E90A2A /* Message */,
 			);
 			path = Class;
-			sourceTree = "<group>";
-		};
-		4134E33F1DFFE0DB00E26DCB /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				41E7B9761E01263300C11FFB /* cell */,
-				4134E3401DFFE13100E26DCB /* LoginViewController.h */,
-				4134E3411DFFE13100E26DCB /* LoginViewController.m */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		41E7B9761E01263300C11FFB /* cell */ = {
-			isa = PBXGroup;
-			children = (
-				41E7B9771E01267D00C11FFB /* LoginTableViewCell.h */,
-				41E7B9781E01267D00C11FFB /* LoginTableViewCell.m */,
-			);
-			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -542,12 +524,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41E7B9791E01267D00C11FFB /* LoginTableViewCell.m in Sources */,
 				29DF74481DF7D3EB00E90A2A /* UITableView+Reactive.m in Sources */,
 				29DF74431DF7D3EB00E90A2A /* UICollectionView+Reactive.m in Sources */,
 				29DF74461DF7D3EB00E90A2A /* UILabel+Reactive.m in Sources */,
 				299D28711DFE8752007F5093 /* RecommendViewController.m in Sources */,
-				4134E3421DFFE13100E26DCB /* LoginViewController.m in Sources */,
 				29DF744A1DF7D3EB00E90A2A /* UITextView+Reactive.m in Sources */,
 				29DF74501DF7D64A00E90A2A /* Utils.m in Sources */,
 				29DF744B1DF7D3EB00E90A2A /* UIView+Reactive.m in Sources */,
