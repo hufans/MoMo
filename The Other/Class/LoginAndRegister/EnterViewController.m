@@ -77,7 +77,7 @@
 #pragma mark - 选项卡
 - (void)addTab{
     //登录选项卡
-    self.loginEnterButton = [[EnterButton alloc] initWithFrame:HXCGRectMake(0, 0, 150, 40) type:@"left" isSelected:true];
+    self.loginEnterButton = [[EnterButton alloc] initWithFrame:HXCGRectMake(0, 0, 160, 40) type:@"left" isSelected:true];
     //避免循环引用
     HXWeakSelf(self)
     [self.loginEnterButton addAttribute:^(UIButton *make) {
@@ -95,13 +95,13 @@
     };
     [self.loginEnterButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.subTitleLabel.mas_bottom).with.offset(HXFloat(60));
-        make.left.mas_equalTo(HXFloat(50));
+        make.left.mas_equalTo(HXFloat(40));
         make.right.equalTo(self.view.mas_centerX);
         make.height.mas_equalTo(HXFloat(40));
     }];
     
     //注册选项卡
-    self.registerEnterButton = [[EnterButton alloc] initWithFrame:HXCGRectMake(0, 0, 150, 40) type:@"right" isSelected:false];
+    self.registerEnterButton = [[EnterButton alloc] initWithFrame:HXCGRectMake(0, 0, 160, 40) type:@"right" isSelected:false];
     [self.registerEnterButton addAttribute:^(UIButton *make) {
         HXStrongSelf(weakSelf);
         make.btnBackgroundColor(themeColor).btnTitleLableFont([UIFont boldSystemFontOfSize:15]).btnTitle(@"注册").btnAddToView(strongSelf.view);
@@ -109,7 +109,7 @@
     [self.registerEnterButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view.mas_centerX);
         make.top.equalTo(self.loginEnterButton);
-        make.right.mas_equalTo(-HXFloat(50));
+        make.right.mas_equalTo(-HXFloat(40));
         make.height.mas_equalTo(HXFloat(40));
     }];
     self.registerEnterButton.click = ^(UIButton *btn){
@@ -132,7 +132,7 @@
     [self.mainTableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.view);
         make.top.equalTo(self.loginEnterButton.mas_bottom);
-        make.size.mas_equalTo(HXCGSizeMake(300, 300));
+        make.size.mas_equalTo(HXCGSizeMake(320, 300));
     }];
 }
 
