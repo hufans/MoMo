@@ -23,7 +23,7 @@
 #define HXCGRectMake(x,y,width,height) CGRectMake(HXFloat(x), HXFloat(y), HXFloat(width), HXFloat(height))
 #define HXCGSizeMake(width,height) CGSizeMake(HXFloat(width), HXFloat(height))
 //时间
-#define TimeInterval 10
+#define TimeInterval 60
 
 
 //循环引用

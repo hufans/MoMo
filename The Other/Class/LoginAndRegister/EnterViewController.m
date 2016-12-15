@@ -77,7 +77,7 @@
 #pragma mark - 选项卡
 - (void)addTab{
     //登录选项卡
-    self.loginEnterButton = [[EnterButton alloc] initWithFrame:HXCGRectMake(0, 0, 150, 30) type:@"left" isSelected:true];
+    self.loginEnterButton = [[EnterButton alloc] initWithFrame:HXCGRectMake(0, 0, 150, 40) type:@"left" isSelected:true];
     //避免循环引用
     HXWeakSelf(self)
     [self.loginEnterButton addAttribute:^(UIButton *make) {
@@ -97,11 +97,11 @@
         make.top.equalTo(self.subTitleLabel.mas_bottom).with.offset(HXFloat(60));
         make.left.mas_equalTo(HXFloat(50));
         make.right.equalTo(self.view.mas_centerX);
-        make.height.mas_equalTo(HXFloat(30));
+        make.height.mas_equalTo(HXFloat(40));
     }];
     
     //注册选项卡
-    self.registerEnterButton = [[EnterButton alloc] initWithFrame:HXCGRectMake(0, 0, 150, 30) type:@"right" isSelected:false];
+    self.registerEnterButton = [[EnterButton alloc] initWithFrame:HXCGRectMake(0, 0, 150, 40) type:@"right" isSelected:false];
     [self.registerEnterButton addAttribute:^(UIButton *make) {
         HXStrongSelf(weakSelf);
         make.btnBackgroundColor(themeColor).btnTitleLableFont([UIFont boldSystemFontOfSize:15]).btnTitle(@"注册").btnAddToView(strongSelf.view);
@@ -110,7 +110,7 @@
         make.left.equalTo(self.view.mas_centerX);
         make.top.equalTo(self.loginEnterButton);
         make.right.mas_equalTo(-HXFloat(50));
-        make.height.mas_equalTo(HXFloat(30));
+        make.height.mas_equalTo(HXFloat(40));
     }];
     self.registerEnterButton.click = ^(UIButton *btn){
         HXStrongSelf(weakSelf)
@@ -174,15 +174,15 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (self.mode == loginMode) {
         if (indexPath.row == 3) {//登录按钮
-            return 60;
+            return 80;
         }else{
-            return 30;
+            return 40;
         }
     }else{
         if (indexPath.row == 4){//注册下一步按钮
-            return 60;
+            return 80;
         }else{
-            return 30;
+            return 40;
         }
     }
 }

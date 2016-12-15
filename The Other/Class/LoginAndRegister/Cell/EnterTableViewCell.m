@@ -35,7 +35,7 @@
             case phoneType:{
                 //区号
                 self.hintLabel = [UILabel makeLabel:^(UILabel *make) {
-                    make.labelTextAlignment(NSTextAlignmentCenter).labelFont([UIFont systemFontOfSize:14]).labelTextColor([UIColor whiteColor]).labelText(@"+86").labelAddToView(self.contentView);
+                    make.labelTextAlignment(NSTextAlignmentCenter).labelFont([UIFont systemFontOfSize:15]).labelTextColor([UIColor whiteColor]).labelText(@"+86").labelAddToView(self.contentView);
                 }];
                 [self.hintLabel mas_makeConstraints:^(MASConstraintMaker *make) {
                     make.top.equalTo(self.contentView);
@@ -55,7 +55,7 @@
                 }];
                 //手机号码输入框
                 self.inputField = [UITextField makeTextField:^(UITextField *make) {
-                    make.tfTintColor([UIColor whiteColor]).tfKeyboardType(UIKeyboardTypePhonePad).tfTextAlignment(NSTextAlignmentLeft).tfFont([UIFont systemFontOfSize:14]).tfTextColor([UIColor whiteColor]).tfAddToView(self.contentView);
+                    make.tfTintColor([UIColor whiteColor]).tfKeyboardType(UIKeyboardTypePhonePad).tfTextAlignment(NSTextAlignmentLeft).tfFont([UIFont systemFontOfSize:15]).tfTextColor([UIColor whiteColor]).tfAddToView(self.contentView);
                 }];
                 self.inputField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入手机号码" attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
                 [self.inputField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -69,7 +69,7 @@
             }
             case loginPwdType:{
                 self.inputField = [UITextField makeTextField:^(UITextField *make) {
-                    make.tfSecureTextEntry(true).tfTintColor([UIColor whiteColor]).tfTextAlignment(NSTextAlignmentLeft).tfFont([UIFont systemFontOfSize:14]).tfTextColor([UIColor whiteColor]).tfAddToView(self.contentView);
+                    make.tfSecureTextEntry(true).tfTintColor([UIColor whiteColor]).tfTextAlignment(NSTextAlignmentLeft).tfFont([UIFont systemFontOfSize:15]).tfTextColor([UIColor whiteColor]).tfAddToView(self.contentView);
                 }];
                 self.inputField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入密码" attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
                 [self.inputField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -95,30 +95,30 @@
             }
             case buttonType:{
                 self.operationButton = [UIButton makeButton:^(UIButton *make) {
-                    make.btnLayerMasksToBounds(true).btnLayerCornerRadius(HXFloat(30)/2.0).btnBackgroundColor([UIColor whiteColor]).btnTitleLableFont([UIFont systemFontOfSize:15]).btnTitleColor(themeColor).btnTitle(@"登录").btnAddToView(self.contentView);
+                    make.btnLayerMasksToBounds(true).btnLayerCornerRadius(HXFloat(40)/2.0).btnBackgroundColor([UIColor whiteColor]).btnTitleLableFont([UIFont systemFontOfSize:15]).btnTitleColor(themeColor).btnTitle(@"登录").btnAddToView(self.contentView);
                 }];
                 [self.operationButton mas_makeConstraints:^(MASConstraintMaker *make) {
-                    make.top.equalTo(self.contentView).with.offset(HXFloat(30));
+                    make.top.equalTo(self.contentView).with.offset(HXFloat(40));
                     make.left.equalTo(self.contentView);
                     make.right.equalTo(self.contentView);
-                    make.height.mas_equalTo(HXFloat(30));
+                    make.height.mas_equalTo(HXFloat(40));
                 }];
                 break;
             }
             case codeType:{
                 self.operationButton = [UIButton makeButton:^(UIButton *make) {
-                    make.btnLayerMasksToBounds(true).btnLayerCornerRadius(20/2.0).btnAddTarget(self,@selector(sendCode),UIControlEventTouchUpInside).btnBackgroundColor([UIColor whiteColor]).btnTitleLableFont([UIFont systemFontOfSize:10]).btnTitleColor(themeColor).btnTitle(@"发送验证码").btnAddToView(self.contentView);
+                    make.btnLayerMasksToBounds(true).btnLayerCornerRadius(30/2.0).btnAddTarget(self,@selector(sendCode),UIControlEventTouchUpInside).btnBackgroundColor([UIColor whiteColor]).btnTitleLableFont([UIFont systemFontOfSize:10]).btnTitleColor(themeColor).btnTitle(@"发送验证码").btnAddToView(self.contentView);
                 }];
                 CGSize size = [Utils calculateStringSize:@"59s后重新发送" font:[UIFont systemFontOfSize:12] maxSize:CGSizeMake(SCREEN_WIDTH, 12)];
                 [self.operationButton mas_makeConstraints:^(MASConstraintMaker *make) {
                     make.right.equalTo(self.contentView);
                     make.centerY.equalTo(self.contentView);
-                    make.height.mas_equalTo(20);
+                    make.height.mas_equalTo(30);
                     make.width.mas_equalTo(size.width);
                 }];
                 
                 self.inputField = [UITextField makeTextField:^(UITextField *make) {
-                    make.tfKeyboardType(UIKeyboardTypePhonePad).tfTintColor([UIColor whiteColor]).tfTextAlignment(NSTextAlignmentLeft).tfFont([UIFont systemFontOfSize:14]).tfTextColor([UIColor whiteColor]).tfAddToView(self.contentView);
+                    make.tfKeyboardType(UIKeyboardTypePhonePad).tfTintColor([UIColor whiteColor]).tfTextAlignment(NSTextAlignmentLeft).tfFont([UIFont systemFontOfSize:15]).tfTextColor([UIColor whiteColor]).tfAddToView(self.contentView);
                 }];
                 self.inputField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入验证码" attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
                 [self.inputField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -143,13 +143,13 @@
             }
             case registerButtonType:{
                 self.operationButton = [UIButton makeButton:^(UIButton *make) {
-                    make.btnLayerMasksToBounds(true).btnLayerCornerRadius(HXFloat(30)/2.0).btnBackgroundColor([UIColor whiteColor]).btnTitleLableFont([UIFont systemFontOfSize:15]).btnTitleColor(themeColor).btnTitle(@"下一步").btnAddToView(self.contentView);
+                    make.btnLayerMasksToBounds(true).btnLayerCornerRadius(HXFloat(40)/2.0).btnBackgroundColor([UIColor whiteColor]).btnTitleLableFont([UIFont systemFontOfSize:15]).btnTitleColor(themeColor).btnTitle(@"下一步").btnAddToView(self.contentView);
                 }];
                 [self.operationButton mas_makeConstraints:^(MASConstraintMaker *make) {
-                    make.top.equalTo(self.contentView).with.offset(HXFloat(30));
+                    make.top.equalTo(self.contentView).with.offset(HXFloat(40));
                     make.left.equalTo(self.contentView);
                     make.right.equalTo(self.contentView);
-                    make.height.mas_equalTo(HXFloat(30));
+                    make.height.mas_equalTo(HXFloat(40));
                 }];
                 break;
             }
@@ -177,9 +177,9 @@
 //添加输入框
 - (void)addInput:(NSString *)placeholder{
     self.inputField = [UITextField makeTextField:^(UITextField *make) {
-        make.tfSecureTextEntry(true).tfTintColor([UIColor whiteColor]).tfFont([UIFont systemFontOfSize:14]).tfTextAlignment(NSTextAlignmentLeft).tfTextColor([UIColor whiteColor]).tfAddToView(self.contentView);
+        make.tfSecureTextEntry(true).tfTintColor([UIColor whiteColor]).tfFont([UIFont systemFontOfSize:15]).tfTextAlignment(NSTextAlignmentLeft).tfTextColor([UIColor whiteColor]).tfAddToView(self.contentView);
     }];
-    self.inputField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeholder attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont systemFontOfSize:14]}];
+    self.inputField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeholder attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont systemFontOfSize:15]}];
     [self.inputField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.contentView).with.offset(HXFloat(16));
         make.top.equalTo(self.contentView);
