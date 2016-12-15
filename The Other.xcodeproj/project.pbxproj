@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		299D28711DFE8752007F5093 /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 299D28701DFE8752007F5093 /* RecommendViewController.m */; };
+		299D28781E013FD2007F5093 /* EnterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 299D28771E013FD2007F5093 /* EnterViewController.m */; };
+		299D287E1E02247A007F5093 /* EnterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 299D287D1E02247A007F5093 /* EnterTableViewCell.m */; };
+		299D28821E022732007F5093 /* EnterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 299D28811E022732007F5093 /* EnterButton.m */; };
 		29DF74421DF7D3EB00E90A2A /* UIButton+Reactive.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DF742F1DF7D3EB00E90A2A /* UIButton+Reactive.m */; };
 		29DF74431DF7D3EB00E90A2A /* UICollectionView+Reactive.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DF74311DF7D3EB00E90A2A /* UICollectionView+Reactive.m */; };
 		29DF74441DF7D3EB00E90A2A /* UICollectionViewFlowLayout+Reactive.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DF74331DF7D3EB00E90A2A /* UICollectionViewFlowLayout+Reactive.m */; };
@@ -54,6 +57,12 @@
 /* Begin PBXFileReference section */
 		299D286F1DFE8752007F5093 /* RecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
 		299D28701DFE8752007F5093 /* RecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
+		299D28761E013FD2007F5093 /* EnterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterViewController.h; sourceTree = "<group>"; };
+		299D28771E013FD2007F5093 /* EnterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterViewController.m; sourceTree = "<group>"; };
+		299D287C1E02247A007F5093 /* EnterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterTableViewCell.h; sourceTree = "<group>"; };
+		299D287D1E02247A007F5093 /* EnterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterTableViewCell.m; sourceTree = "<group>"; };
+		299D28801E022732007F5093 /* EnterButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterButton.h; sourceTree = "<group>"; };
+		299D28811E022732007F5093 /* EnterButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterButton.m; sourceTree = "<group>"; };
 		29DF742D1DF7D3EB00E90A2A /* BaseHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseHeader.h; sourceTree = "<group>"; };
 		29DF742E1DF7D3EB00E90A2A /* UIButton+Reactive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Reactive.h"; sourceTree = "<group>"; };
 		29DF742F1DF7D3EB00E90A2A /* UIButton+Reactive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Reactive.m"; sourceTree = "<group>"; };
@@ -154,8 +163,29 @@
 		299D28741E013F30007F5093 /* LoginAndRegister */ = {
 			isa = PBXGroup;
 			children = (
+				299D287B1E022446007F5093 /* Cell */,
+				299D28761E013FD2007F5093 /* EnterViewController.h */,
+				299D28771E013FD2007F5093 /* EnterViewController.m */,
 			);
 			path = LoginAndRegister;
+			sourceTree = "<group>";
+		};
+		299D287B1E022446007F5093 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				299D287C1E02247A007F5093 /* EnterTableViewCell.h */,
+				299D287D1E02247A007F5093 /* EnterTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		299D287F1E02270E007F5093 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				299D28801E022732007F5093 /* EnterButton.h */,
+				299D28811E022732007F5093 /* EnterButton.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		29DF742C1DF7D3EB00E90A2A /* Extension */ = {
@@ -190,6 +220,7 @@
 		29DF744D1DF7D5AF00E90A2A /* Kit */ = {
 			isa = PBXGroup;
 			children = (
+				299D287F1E02270E007F5093 /* Views */,
 				29DF744E1DF7D64A00E90A2A /* Utils.h */,
 				29DF744F1DF7D64A00E90A2A /* Utils.m */,
 				29DF74511DF7D9CF00E90A2A /* PrefixHeader.pch */,
@@ -530,6 +561,7 @@
 				299D28711DFE8752007F5093 /* RecommendViewController.m in Sources */,
 				29DF744A1DF7D3EB00E90A2A /* UITextView+Reactive.m in Sources */,
 				29DF74501DF7D64A00E90A2A /* Utils.m in Sources */,
+				299D287E1E02247A007F5093 /* EnterTableViewCell.m in Sources */,
 				29DF744B1DF7D3EB00E90A2A /* UIView+Reactive.m in Sources */,
 				29DF74651DF94CC700E90A2A /* MessageViewController.m in Sources */,
 				29DF74451DF7D3EB00E90A2A /* UIImageView+Reactive.m in Sources */,
@@ -537,11 +569,13 @@
 				29DF745C1DF94C9600E90A2A /* HomeViewController.m in Sources */,
 				29DF74591DF94C0600E90A2A /* MainTabBarController.m in Sources */,
 				29DF74491DF7D3EB00E90A2A /* UITextField+Reactive.m in Sources */,
+				299D28781E013FD2007F5093 /* EnterViewController.m in Sources */,
 				29DF74421DF7D3EB00E90A2A /* UIButton+Reactive.m in Sources */,
 				29DF74471DF7D3EB00E90A2A /* UIScrollView+Reactive.m in Sources */,
 				29DF745F1DF94CA700E90A2A /* ContactViewController.m in Sources */,
 				410BFBF71DF7C7CF006C93A0 /* main.m in Sources */,
 				29DF74441DF7D3EB00E90A2A /* UICollectionViewFlowLayout+Reactive.m in Sources */,
+				299D28821E022732007F5093 /* EnterButton.m in Sources */,
 				29DF74621DF94CB300E90A2A /* MeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

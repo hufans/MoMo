@@ -32,4 +32,8 @@
 - (tfRightView)tfRightView;
 - (tfRightViewMode)tfRightViewMode;
 
+- (tfKeyboardType)tfKeyboardType;
+- (tfTintColor)tfTintColor;
+- (tfSecureTextEntry)tfSecureTextEntry;
+
 @end

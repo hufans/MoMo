@@ -18,8 +18,17 @@
 ///RGB值
 #define RGB(R,G,B,A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
 //主题色
-#define themeColor [UIColor colorWithRed:0/255.0 green:180/255.0 blue:254/255.0 alpha:1.0]
+#define themeColor [UIColor colorWithRed:0/255.0 green:180/255.0 blue:255/255.0 alpha:1.0]
+//构造rect和size
+#define HXCGRectMake(x,y,width,height) CGRectMake(HXFloat(x), HXFloat(y), HXFloat(width), HXFloat(height))
+#define HXCGSizeMake(width,height) CGSizeMake(HXFloat(width), HXFloat(height))
+//时间
+#define TimeInterval 10
 
+
+//循环引用
+#define HXWeakSelf(type)  __weak typeof(type) weakSelf = type;
+#define HXStrongSelf(type)  __strong typeof(type) strongSelf = type;
 
 ///导入分类
 #import "UIButton+Reactive.h"
@@ -32,5 +41,32 @@
 #import "UITextField+Reactive.h"
 #import "UITextView+Reactive.h"
 #import "UIView+Reactive.h"
+
+//三方库
+#import "Masonry.h"
+//自定义类
+#import "Utils.h"
+
+
+//枚举
+typedef enum : NSUInteger {
+    phoneType,
+    loginPwdType,
+    loginForgotPwdType,
+    buttonType,
+    codeType,
+    registerPwdType,
+    registerPwdAgainType,
+    registerButtonType
+} enterCellType;
+
+typedef enum : NSUInteger {
+    loginMode,
+    registerMode
+} showMode;
+
+
+//块定义
+typedef void(^completeBlock)();
 
 #endif /* PrefixHeader_pch */

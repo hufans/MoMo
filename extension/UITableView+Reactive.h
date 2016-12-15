@@ -28,5 +28,6 @@
 - (tvSeparatorInset)tvSeparatorInset;
 - (tvSeparatorStyle)tvSeparatorStyle;
 - (tvRowHeight)tvRowHeight;
+- (tvBounces)tvBounces;
 
 @end

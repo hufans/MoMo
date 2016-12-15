@@ -16,5 +16,7 @@
 + (BOOL)validateEmailAdress:(NSString *)email;
 ///保留两位小数
 + (BOOL)validateNumber:(NSString *)number;
+///计算文本大小
++ (CGSize)calculateStringSize:(NSString *)string font:(UIFont *)font maxSize:(CGSize)size;
 
 @end

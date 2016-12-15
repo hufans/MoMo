@@ -27,17 +27,20 @@ typedef UIButton *(^btnAlpha)(CGFloat);
 
 typedef UIButton *(^btnTitle)(NSString *);
 typedef UIButton *(^btnTitleForState)(NSString *, UIControlState state);
-
 typedef UIButton *(^btnTitleColor)(UIColor *);
 typedef UIButton *(^btnTitleColorForState)(UIColor *, UIControlState state);
-
 typedef UIButton *(^btnImage)(UIImage *);
 typedef UIButton *(^btnImageForState)(UIImage *, UIControlState state);
-
 typedef UIButton *(^btnTitleEdgeInsets)(UIEdgeInsets);
 typedef UIButton *(^btnImageEdgeInsets)(UIEdgeInsets);
 typedef UIButton *(^btnContentEdgeInsets)(UIEdgeInsets);
 typedef UIButton *(^btnTag)(NSInteger);
+
+typedef UIButton *(^btnLayerCornerRadius)(CGFloat);
+typedef UIButton *(^btnLayerMasksToBounds)(BOOL);
+typedef UIButton *(^btnLayerBorderColor)(UIColor *);
+typedef UIButton *(^btnLayerBorderWidth)(CGFloat);
+
 //事件
 typedef UIButton *(^btnAddTarget)(id target, SEL selector, UIControlEvents events);
 typedef void (^btnClickClosure)(UIButton *);
@@ -86,6 +89,7 @@ typedef UITableView *(^tvSeparatorColor)(UIColor *);
 typedef UITableView *(^tvSeparatorInset)(UIEdgeInsets);
 typedef UITableView *(^tvSeparatorStyle)(UITableViewCellSeparatorStyle);
 typedef UITableView *(^tvRowHeight)(CGFloat);
+typedef UITableView *(^tvBounces)(BOOL);
 
 //-----UIScrollView
 typedef UIScrollView *(^svFrame)(CGRect);
@@ -126,6 +130,10 @@ typedef UITextField *(^tfDelegate)(id<UITextFieldDelegate>);
 typedef UITextField *(^tfLeftView)(UIView *);
 typedef UITextField *(^tfRightView)(UIView *);
 typedef UITextField *(^tfRightViewMode)(UITextFieldViewMode);
+
+typedef UITextField *(^tfKeyboardType)(UIKeyboardType);
+typedef UITextField *(^tfTintColor)(UIColor *);
+typedef UITextField *(^tfSecureTextEntry)(BOOL);
 
 //-----UITextView
 typedef UITextView *(^xvFrame)(CGRect);

@@ -14,6 +14,7 @@
 //#import "MeViewController.h"
 #import <AVOSCloud/AVOSCloud.h>
 #import <AVOSCloudCrashReporting.h>
+#import "EnterViewController.h"
 
 
 @interface AppDelegate ()
@@ -32,6 +33,10 @@
     //稳定实时的数据统计分析服务
     //[AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
 
+    EnterViewController *enter = [[EnterViewController alloc] init];
+    UINavigationController *topNav = [[UINavigationController alloc] initWithRootViewController:enter];
+    self.window.rootViewController = topNav;
+    
     return YES;
 }
 

@@ -127,4 +127,12 @@
     };
 }
 
+#pragma mark - bounces
+- (tvBounces)tvBounces{
+    return ^UITableView *(BOOL bounces){
+        self.bounces = bounces;
+        return self;
+    };
+}
+
 @end

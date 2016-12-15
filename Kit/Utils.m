@@ -28,4 +28,8 @@
     return [numberTest evaluateWithObject:number];
 }
 
++ (CGSize)calculateStringSize:(NSString *)string font:(UIFont *)font maxSize:(CGSize)size{
+    return [string boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:font} context:nil].size;
+}
+
 @end

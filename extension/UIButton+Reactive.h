@@ -10,11 +10,13 @@
 #import "BaseHeader.h"
 //C声明
 UIButton *buttonInit();
-extern CGFloat hxFloat(CGFloat);
+extern CGFloat HXFloat(CGFloat);
 
 @interface UIButton (Reactive)
 
 + (UIButton *)makeButton:(void (^)(UIButton *))make;
+
+- (UIButton *)addAttribute:(void (^)(UIButton *))make;
 
 - (btnFrame)btnFrame;
 - (btnBackgroundColor)btnBackgroundColor;
@@ -35,6 +37,10 @@ extern CGFloat hxFloat(CGFloat);
 - (btnImageEdgeInsets)btnImageEdgeInsets;
 - (btnContentEdgeInsets)btnContentEdgeInsets;
 
+- (btnLayerCornerRadius)btnLayerCornerRadius;
+- (btnLayerMasksToBounds)btnLayerMasksToBounds;
+- (btnLayerBorderColor)btnLayerBorderColor;
+- (btnLayerBorderWidth)btnLayerBorderWidth;
 
 @property (nonatomic, copy)btnClickClosure click;
 

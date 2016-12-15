@@ -153,4 +153,28 @@
     };
 }
 
+#pragma mark - keyboardType
+- (tfKeyboardType)tfKeyboardType{
+    return ^UITextField *(UIKeyboardType type){
+        self.keyboardType = type;
+        return self;
+    };
+}
+
+#pragma mark - tintColor
+- (tfTintColor)tfTintColor{
+    return ^UITextField *(UIColor *tintColor){
+        self.tintColor = tintColor;
+        return self;
+    };
+}
+
+#pragma mark - secureTextEntry
+- (tfSecureTextEntry)tfSecureTextEntry{
+    return ^UITextField *(BOOL flag){
+        self.secureTextEntry = flag;
+        return self;
+    };
+}
+
 @end

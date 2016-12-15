@@ -18,7 +18,7 @@ UIButton *buttonInit() {
     return button;
 }
 
-CGFloat hxFloat(CGFloat width){
+CGFloat HXFloat(CGFloat width){
     return width/414.0 * [UIScreen mainScreen].bounds.size.width;
 }
 
@@ -29,6 +29,12 @@ CGFloat hxFloat(CGFloat width){
     UIButton *btn = buttonInit();
     make(btn);
     return btn;
+}
+
+#pragma mark - 属性设置
+- (UIButton *)addAttribute:(void (^)(UIButton *))make{
+    make(self);
+    return self;
 }
 
 #pragma mark - frame
@@ -163,6 +169,38 @@ CGFloat hxFloat(CGFloat width){
 - (btnTag)btnTag{
     return ^UIButton *(NSInteger tag){
         self.tag = tag;
+        return self;
+    };
+}
+
+#pragma mark - layer.cornerRadius
+- (btnLayerCornerRadius)btnLayerCornerRadius{
+    return ^UIButton *(CGFloat radius){
+        self.layer.cornerRadius = radius;
+        return self;
+    };
+}
+
+#pragma mark - layer.masksToBounds
+- (btnLayerMasksToBounds)btnLayerMasksToBounds{
+    return ^UIButton *(BOOL flag){
+        self.layer.masksToBounds = flag;
+        return self;
+    };
+}
+
+#pragma mark - layer.borderColor
+- (btnLayerBorderColor)btnLayerBorderColor{
+    return ^UIButton *(UIColor *borderColor){
+        self.layer.borderColor = borderColor.CGColor;
+        return self;
+    };
+}
+
+#pragma mark - layer.borderWidth
+- (btnLayerBorderWidth)btnLayerBorderWidth{
+    return ^UIButton *(CGFloat borderWidth){
+        self.layer.borderWidth = borderWidth;
         return self;
     };
 }
