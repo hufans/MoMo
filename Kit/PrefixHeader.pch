@@ -41,14 +41,18 @@
 #import "UITextField+Reactive.h"
 #import "UITextView+Reactive.h"
 #import "UIView+Reactive.h"
+#import "UIPickerView+Reactive.h"
 
 //三方库
 #import "Masonry.h"
 //自定义类
 #import "Utils.h"
+//控制器基类
+#import "BaseViewController.h"
 
 
 //枚举
+//登录、注册界面
 typedef enum : NSUInteger {
     phoneType,
     loginPwdType,
@@ -58,15 +62,27 @@ typedef enum : NSUInteger {
     registerPwdType,
     registerPwdAgainType,
     registerButtonType
-} enterCellType;
+} EnterCellType;
 
 typedef enum : NSUInteger {
     loginMode,
     registerMode
-} showMode;
+} ShowMode;
+
+//注册-完善信息
+typedef enum : NSUInteger {
+    nameType,
+    sexType,
+    birthdayType,
+    likeStyleType,
+    tagType
+} RegisterCellType;
 
 
 //块定义
 typedef void(^completeBlock)();
+typedef void(^chooseComplete)(NSString *);//SexViewController
+typedef void(^chooseDateComplete)(NSDate *);//BirthdayViewController
+
 
 #endif /* PrefixHeader_pch */

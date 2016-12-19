@@ -7,10 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2920D2821E07AD7A00718F4F /* EnterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2920D27F1E07AD7A00718F4F /* EnterButton.m */; };
+		2920D2831E07AD7A00718F4F /* TagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2920D2811E07AD7A00718F4F /* TagButton.m */; };
+		2920D2891E07B2B900718F4F /* SexTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2920D2881E07B2B900718F4F /* SexTableViewCell.m */; };
+		2920D28F1E07C5F900718F4F /* UIPickerView+Reactive.m in Sources */ = {isa = PBXBuildFile; fileRef = 2920D28E1E07C5F900718F4F /* UIPickerView+Reactive.m */; };
+		2920D29E1E07DB1E00718F4F /* BirthdayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2920D2951E07DB1E00718F4F /* BirthdayViewController.m */; };
+		2920D29F1E07DB1E00718F4F /* EnterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2920D2971E07DB1E00718F4F /* EnterViewController.m */; };
+		2920D2A01E07DB1E00718F4F /* RegisterStep2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2920D2991E07DB1E00718F4F /* RegisterStep2ViewController.m */; };
+		2920D2A11E07DB1E00718F4F /* RegisterStep3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2920D29B1E07DB1E00718F4F /* RegisterStep3ViewController.m */; };
+		2920D2A21E07DB1E00718F4F /* SexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2920D29D1E07DB1E00718F4F /* SexViewController.m */; };
 		299D28711DFE8752007F5093 /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 299D28701DFE8752007F5093 /* RecommendViewController.m */; };
-		299D28781E013FD2007F5093 /* EnterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 299D28771E013FD2007F5093 /* EnterViewController.m */; };
 		299D287E1E02247A007F5093 /* EnterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 299D287D1E02247A007F5093 /* EnterTableViewCell.m */; };
-		299D28821E022732007F5093 /* EnterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 299D28811E022732007F5093 /* EnterButton.m */; };
+		299D28891E03979D007F5093 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 299D28881E03979D007F5093 /* BaseViewController.m */; };
+		299D288C1E03BD7A007F5093 /* RegisterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 299D288B1E03BD7A007F5093 /* RegisterTableViewCell.m */; };
 		29DF74421DF7D3EB00E90A2A /* UIButton+Reactive.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DF742F1DF7D3EB00E90A2A /* UIButton+Reactive.m */; };
 		29DF74431DF7D3EB00E90A2A /* UICollectionView+Reactive.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DF74311DF7D3EB00E90A2A /* UICollectionView+Reactive.m */; };
 		29DF74441DF7D3EB00E90A2A /* UICollectionViewFlowLayout+Reactive.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DF74331DF7D3EB00E90A2A /* UICollectionViewFlowLayout+Reactive.m */; };
@@ -34,7 +43,7 @@
 		410BFC051DF7C7CF006C93A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 410BFC031DF7C7CF006C93A0 /* LaunchScreen.storyboard */; };
 		410BFC101DF7C7CF006C93A0 /* The_OtherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 410BFC0F1DF7C7CF006C93A0 /* The_OtherTests.m */; };
 		410BFC1B1DF7C7CF006C93A0 /* The_OtherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 410BFC1A1DF7C7CF006C93A0 /* The_OtherUITests.m */; };
-		6A36D4C73AEB72212FAF9E5A /* libPods-The Other.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABBA2B382EC5439F21DF0B15 /* libPods-The Other.a */; };
+		471B84BC047D570BDCDCC424 /* Pods_The_Other.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51AD4DF45C3D7C17FBC0187 /* Pods_The_Other.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,14 +64,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2920D27E1E07AD7A00718F4F /* EnterButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterButton.h; sourceTree = "<group>"; };
+		2920D27F1E07AD7A00718F4F /* EnterButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterButton.m; sourceTree = "<group>"; };
+		2920D2801E07AD7A00718F4F /* TagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagButton.h; sourceTree = "<group>"; };
+		2920D2811E07AD7A00718F4F /* TagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagButton.m; sourceTree = "<group>"; };
+		2920D2871E07B2B900718F4F /* SexTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SexTableViewCell.h; sourceTree = "<group>"; };
+		2920D2881E07B2B900718F4F /* SexTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SexTableViewCell.m; sourceTree = "<group>"; };
+		2920D28D1E07C5F900718F4F /* UIPickerView+Reactive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPickerView+Reactive.h"; sourceTree = "<group>"; };
+		2920D28E1E07C5F900718F4F /* UIPickerView+Reactive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPickerView+Reactive.m"; sourceTree = "<group>"; };
+		2920D2941E07DB1E00718F4F /* BirthdayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirthdayViewController.h; sourceTree = "<group>"; };
+		2920D2951E07DB1E00718F4F /* BirthdayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirthdayViewController.m; sourceTree = "<group>"; };
+		2920D2961E07DB1E00718F4F /* EnterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterViewController.h; sourceTree = "<group>"; };
+		2920D2971E07DB1E00718F4F /* EnterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterViewController.m; sourceTree = "<group>"; };
+		2920D2981E07DB1E00718F4F /* RegisterStep2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterStep2ViewController.h; sourceTree = "<group>"; };
+		2920D2991E07DB1E00718F4F /* RegisterStep2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterStep2ViewController.m; sourceTree = "<group>"; };
+		2920D29A1E07DB1E00718F4F /* RegisterStep3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterStep3ViewController.h; sourceTree = "<group>"; };
+		2920D29B1E07DB1E00718F4F /* RegisterStep3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterStep3ViewController.m; sourceTree = "<group>"; };
+		2920D29C1E07DB1E00718F4F /* SexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SexViewController.h; sourceTree = "<group>"; };
+		2920D29D1E07DB1E00718F4F /* SexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SexViewController.m; sourceTree = "<group>"; };
 		299D286F1DFE8752007F5093 /* RecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
 		299D28701DFE8752007F5093 /* RecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
-		299D28761E013FD2007F5093 /* EnterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterViewController.h; sourceTree = "<group>"; };
-		299D28771E013FD2007F5093 /* EnterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterViewController.m; sourceTree = "<group>"; };
 		299D287C1E02247A007F5093 /* EnterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterTableViewCell.h; sourceTree = "<group>"; };
 		299D287D1E02247A007F5093 /* EnterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterTableViewCell.m; sourceTree = "<group>"; };
-		299D28801E022732007F5093 /* EnterButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterButton.h; sourceTree = "<group>"; };
-		299D28811E022732007F5093 /* EnterButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterButton.m; sourceTree = "<group>"; };
+		299D28871E03979D007F5093 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		299D28881E03979D007F5093 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		299D288A1E03BD7A007F5093 /* RegisterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterTableViewCell.h; sourceTree = "<group>"; };
+		299D288B1E03BD7A007F5093 /* RegisterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterTableViewCell.m; sourceTree = "<group>"; };
 		29DF742D1DF7D3EB00E90A2A /* BaseHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseHeader.h; sourceTree = "<group>"; };
 		29DF742E1DF7D3EB00E90A2A /* UIButton+Reactive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Reactive.h"; sourceTree = "<group>"; };
 		29DF742F1DF7D3EB00E90A2A /* UIButton+Reactive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Reactive.m"; sourceTree = "<group>"; };
@@ -111,7 +138,7 @@
 		410BFC161DF7C7CF006C93A0 /* The OtherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The OtherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		410BFC1A1DF7C7CF006C93A0 /* The_OtherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = The_OtherUITests.m; sourceTree = "<group>"; };
 		410BFC1C1DF7C7CF006C93A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABBA2B382EC5439F21DF0B15 /* libPods-The Other.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-The Other.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D51AD4DF45C3D7C17FBC0187 /* Pods_The_Other.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Other.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E48C2EC48B0C418A8B822F /* Pods-The Other.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Other.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Other/Pods-The Other.release.xcconfig"; sourceTree = "<group>"; };
 		F220C9C93F2D51D0170F4147 /* Pods-The Other.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Other.debug.xcconfig"; path = "Pods/Target Support Files/Pods-The Other/Pods-The Other.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,7 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A36D4C73AEB72212FAF9E5A /* libPods-The Other.a in Frameworks */,
+				471B84BC047D570BDCDCC424 /* Pods_The_Other.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +178,34 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		2920D27D1E07AD6200718F4F /* views */ = {
+			isa = PBXGroup;
+			children = (
+				2920D27E1E07AD7A00718F4F /* EnterButton.h */,
+				2920D27F1E07AD7A00718F4F /* EnterButton.m */,
+				2920D2801E07AD7A00718F4F /* TagButton.h */,
+				2920D2811E07AD7A00718F4F /* TagButton.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		2920D2931E07DADE00718F4F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2920D2941E07DB1E00718F4F /* BirthdayViewController.h */,
+				2920D2951E07DB1E00718F4F /* BirthdayViewController.m */,
+				2920D2961E07DB1E00718F4F /* EnterViewController.h */,
+				2920D2971E07DB1E00718F4F /* EnterViewController.m */,
+				2920D2981E07DB1E00718F4F /* RegisterStep2ViewController.h */,
+				2920D2991E07DB1E00718F4F /* RegisterStep2ViewController.m */,
+				2920D29A1E07DB1E00718F4F /* RegisterStep3ViewController.h */,
+				2920D29B1E07DB1E00718F4F /* RegisterStep3ViewController.m */,
+				2920D29C1E07DB1E00718F4F /* SexViewController.h */,
+				2920D29D1E07DB1E00718F4F /* SexViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		299D286E1DFE8742007F5093 /* Recommend */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,9 +218,9 @@
 		299D28741E013F30007F5093 /* LoginAndRegister */ = {
 			isa = PBXGroup;
 			children = (
+				2920D27D1E07AD6200718F4F /* views */,
 				299D287B1E022446007F5093 /* Cell */,
-				299D28761E013FD2007F5093 /* EnterViewController.h */,
-				299D28771E013FD2007F5093 /* EnterViewController.m */,
+				2920D2931E07DADE00718F4F /* Controllers */,
 			);
 			path = LoginAndRegister;
 			sourceTree = "<group>";
@@ -175,17 +230,12 @@
 			children = (
 				299D287C1E02247A007F5093 /* EnterTableViewCell.h */,
 				299D287D1E02247A007F5093 /* EnterTableViewCell.m */,
+				299D288A1E03BD7A007F5093 /* RegisterTableViewCell.h */,
+				299D288B1E03BD7A007F5093 /* RegisterTableViewCell.m */,
+				2920D2871E07B2B900718F4F /* SexTableViewCell.h */,
+				2920D2881E07B2B900718F4F /* SexTableViewCell.m */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		299D287F1E02270E007F5093 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				299D28801E022732007F5093 /* EnterButton.h */,
-				299D28811E022732007F5093 /* EnterButton.m */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		29DF742C1DF7D3EB00E90A2A /* Extension */ = {
@@ -212,6 +262,8 @@
 				29DF743F1DF7D3EB00E90A2A /* UITextView+Reactive.m */,
 				29DF74401DF7D3EB00E90A2A /* UIView+Reactive.h */,
 				29DF74411DF7D3EB00E90A2A /* UIView+Reactive.m */,
+				2920D28D1E07C5F900718F4F /* UIPickerView+Reactive.h */,
+				2920D28E1E07C5F900718F4F /* UIPickerView+Reactive.m */,
 			);
 			name = Extension;
 			path = extension;
@@ -220,10 +272,11 @@
 		29DF744D1DF7D5AF00E90A2A /* Kit */ = {
 			isa = PBXGroup;
 			children = (
-				299D287F1E02270E007F5093 /* Views */,
 				29DF744E1DF7D64A00E90A2A /* Utils.h */,
 				29DF744F1DF7D64A00E90A2A /* Utils.m */,
 				29DF74511DF7D9CF00E90A2A /* PrefixHeader.pch */,
+				299D28871E03979D007F5093 /* BaseViewController.h */,
+				299D28881E03979D007F5093 /* BaseViewController.m */,
 			);
 			path = Kit;
 			sourceTree = SOURCE_ROOT;
@@ -269,7 +322,7 @@
 		3415731DD6863A346A22150C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ABBA2B382EC5439F21DF0B15 /* libPods-The Other.a */,
+				D51AD4DF45C3D7C17FBC0187 /* Pods_The_Other.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -439,6 +492,7 @@
 					410BFBF11DF7C7CF006C93A0 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 3NRA94FPS6;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					410BFC0A1DF7C7CF006C93A0 = {
@@ -556,27 +610,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				29DF74481DF7D3EB00E90A2A /* UITableView+Reactive.m in Sources */,
+				299D28891E03979D007F5093 /* BaseViewController.m in Sources */,
+				2920D2831E07AD7A00718F4F /* TagButton.m in Sources */,
 				29DF74431DF7D3EB00E90A2A /* UICollectionView+Reactive.m in Sources */,
 				29DF74461DF7D3EB00E90A2A /* UILabel+Reactive.m in Sources */,
 				299D28711DFE8752007F5093 /* RecommendViewController.m in Sources */,
+				299D288C1E03BD7A007F5093 /* RegisterTableViewCell.m in Sources */,
+				2920D2A11E07DB1E00718F4F /* RegisterStep3ViewController.m in Sources */,
+				2920D28F1E07C5F900718F4F /* UIPickerView+Reactive.m in Sources */,
 				29DF744A1DF7D3EB00E90A2A /* UITextView+Reactive.m in Sources */,
 				29DF74501DF7D64A00E90A2A /* Utils.m in Sources */,
 				299D287E1E02247A007F5093 /* EnterTableViewCell.m in Sources */,
+				2920D2A01E07DB1E00718F4F /* RegisterStep2ViewController.m in Sources */,
 				29DF744B1DF7D3EB00E90A2A /* UIView+Reactive.m in Sources */,
+				2920D2821E07AD7A00718F4F /* EnterButton.m in Sources */,
+				2920D29F1E07DB1E00718F4F /* EnterViewController.m in Sources */,
 				29DF74651DF94CC700E90A2A /* MessageViewController.m in Sources */,
 				29DF74451DF7D3EB00E90A2A /* UIImageView+Reactive.m in Sources */,
 				410BFBFA1DF7C7CF006C93A0 /* AppDelegate.m in Sources */,
 				29DF745C1DF94C9600E90A2A /* HomeViewController.m in Sources */,
 				29DF74591DF94C0600E90A2A /* MainTabBarController.m in Sources */,
 				29DF74491DF7D3EB00E90A2A /* UITextField+Reactive.m in Sources */,
-				299D28781E013FD2007F5093 /* EnterViewController.m in Sources */,
+				2920D2A21E07DB1E00718F4F /* SexViewController.m in Sources */,
 				29DF74421DF7D3EB00E90A2A /* UIButton+Reactive.m in Sources */,
 				29DF74471DF7D3EB00E90A2A /* UIScrollView+Reactive.m in Sources */,
 				29DF745F1DF94CA700E90A2A /* ContactViewController.m in Sources */,
 				410BFBF71DF7C7CF006C93A0 /* main.m in Sources */,
+				2920D2891E07B2B900718F4F /* SexTableViewCell.m in Sources */,
 				29DF74441DF7D3EB00E90A2A /* UICollectionViewFlowLayout+Reactive.m in Sources */,
-				299D28821E022732007F5093 /* EnterButton.m in Sources */,
 				29DF74621DF94CB300E90A2A /* MeViewController.m in Sources */,
+				2920D29E1E07DB1E00718F4F /* BirthdayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -724,6 +787,9 @@
 			baseConfigurationReference = F220C9C93F2D51D0170F4147 /* Pods-The Other.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3NRA94FPS6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/kit/PrefixHeader.pch";
@@ -731,7 +797,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hufan.com.The-Other";
+				PRODUCT_MODULE_NAME = TheOther;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -740,6 +809,9 @@
 			baseConfigurationReference = D8E48C2EC48B0C418A8B822F /* Pods-The Other.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3NRA94FPS6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/kit/PrefixHeader.pch";
@@ -747,7 +819,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hufan.com.The-Other";
+				PRODUCT_MODULE_NAME = TheOther;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

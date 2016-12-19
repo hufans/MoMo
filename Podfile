@@ -1,3 +1,4 @@
+use_frameworks!
 platform:ios,'8.0'
 target 'The Other' do
 
@@ -11,6 +12,7 @@ pod 'AVOSCloudIM'             # 实时通信模块
 pod 'AVOSCloudCrashReporting' # 错误报告模块
 pod 'BaiduMapKit' #百度地图SDK
 pod 'Masonry'
+pod 'IQKeyboardManager'
 
 end
 

@@ -15,7 +15,6 @@
 
 @property (nonatomic)UILabel *hintLabel;
 @property (nonatomic)UIImageView *verticalLine;
-@property (nonatomic)UITextField *inputField;
 @property (nonatomic)UIImageView *bottomHorizontalLine;
 @property (nonatomic)UIButton *operationButton;
 @property (nonatomic)NSTimer *timer;
@@ -25,7 +24,7 @@
 @implementation EnterTableViewCell
 
 
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier type:(enterCellType)type mode:(showMode)mode{
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier type:(EnterCellType)type mode:(ShowMode)mode{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         //初始化属性
         self.backgroundColor = [UIColor clearColor];
@@ -143,7 +142,7 @@
             }
             case registerButtonType:{
                 self.operationButton = [UIButton makeButton:^(UIButton *make) {
-                    make.btnLayerMasksToBounds(true).btnLayerCornerRadius(HXFloat(40)/2.0).btnBackgroundColor([UIColor whiteColor]).btnTitleLableFont([UIFont systemFontOfSize:15]).btnTitleColor(themeColor).btnTitle(@"下一步").btnAddToView(self.contentView);
+                    make.btnAddTarget(self,@selector(nextStep),UIControlEventTouchUpInside).btnLayerMasksToBounds(true).btnLayerCornerRadius(HXFloat(40)/2.0).btnBackgroundColor([UIColor whiteColor]).btnTitleLableFont([UIFont systemFontOfSize:15]).btnTitleColor(themeColor).btnTitle(@"下一步").btnAddToView(self.contentView);
                 }];
                 [self.operationButton mas_makeConstraints:^(MASConstraintMaker *make) {
                     make.top.equalTo(self.contentView).with.offset(HXFloat(40));
@@ -209,6 +208,7 @@
 }
 
 #pragma mark - 协议方法
+///发送验证码
 - (void)sendCode{
     if (self.delegate && [self.delegate respondsToSelector:@selector(sendVerificationCode:)]) {
         self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timePass) userInfo:nil repeats:true];
@@ -216,6 +216,13 @@
         [self.delegate sendVerificationCode:^{
             [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
         }];
+    }
+}
+
+///注册下一步
+- (void)nextStep{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(registerNextStep)]) {
+        [self.delegate registerNextStep];
     }
 }
 

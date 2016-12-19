@@ -168,6 +168,17 @@ typedef UICollectionView *(^cvDelegate)(id<UICollectionViewDelegate>);
 typedef UICollectionView *(^cvDataSource)(id<UICollectionViewDataSource>);
 typedef UICollectionView *(^cvBackgroundView)(UIView *);
 
+//-----UIPickerView
+typedef UIPickerView *(^pvFrame)(CGRect);
+typedef UIPickerView *(^pvBackgroundColor)(UIColor *);
+typedef UIPickerView *(^pvAddToView)(UIView *);
+typedef UIPickerView *(^pvTag)(NSInteger);
+typedef UIPickerView *(^pvCenter)(CGPoint);
+typedef UIPickerView *(^pvAlpha)(CGFloat);
+
+typedef UIPickerView *(^pvDelegate)(id<UIPickerViewDelegate>);
+typedef UIPickerView *(^pvDataSource)(id<UIPickerViewDataSource>);
+
 //-----UISearchBar
 
 //-----UISegmentedControl

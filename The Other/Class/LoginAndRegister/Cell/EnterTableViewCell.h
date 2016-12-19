@@ -14,6 +14,9 @@
 
 ///发送验证码
 - (void)sendVerificationCode:(completeBlock)block;
+///注册下一步
+- (void)registerNextStep;
+
 
 @end
 
@@ -21,6 +24,8 @@
 
 @property (nonatomic, weak)id<EnterDelegate> delegate;
 
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier type:(enterCellType)type mode:(showMode)mode;
+@property (nonatomic)UITextField *inputField;
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier type:(EnterCellType)type mode:(ShowMode)mode;
 
 @end
